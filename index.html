@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duc Minh — Web Developer</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <header class="navbar">
+        <div class="navbar__container">
+            <a href="#" class="navbar__logo">LOGO</a>
+            <nav class="navbar__nav">
+                <a href="#home" class="navbar__link navbar__link--active">Home</a>
+                <a href="#services" class="navbar__link">Services</a>
+                <a href="#about" class="navbar__link">About me</a>
+                <a href="#portfolio" class="navbar__link">Portfolio</a>
+                <a href="#contact" class="navbar__link">Contact me</a>
+            </nav>
+            <a href="#contact" class="btn btn--primary">Hire Me</a>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+        <div class="hero__container">
+            <div class="hero__content">
+                <p class="hero__greeting">Hi I am</p>
+                <h2 class="hero__name">Ho Nguyen Duc Minh</h2>
+                <h1 class="hero__title">Web Developer</h1>
+                <div class="hero__socials">
+                    <a href="https://www.facebook.com/minh.duc.639451/" class="hero__social-link" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                    </a>
+                    <a href="#" class="hero__social-link" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </a>
+                    <a href="#" class="hero__social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect x="2" y="9" width="4" height="12" />
+                            <circle cx="4" cy="4" r="2" /></svg>
+                    </a>
+                    <a href="#" class="hero__social-link" aria-label="Email">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <polyline points="22,4 12,13 2,4" /></svg>
+                    </a>
+                </div>
+                <div class="hero__cta">
+                    <a href="#contact" class="btn btn--primary">Hire Me</a>
+                    <a href="#" class="btn btn--outline">Download CV</a>
+                </div>
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">5+</span>
+                        <span class="hero__stat-label">Experiences</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">20+</span>
+                        <span class="hero__stat-label">Project done</span>
+                    </div>
+                    <div class="hero__stat-divider"></div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">80+</span>
+                        <span class="hero__stat-label">Happy Clients</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__image-wrap">
+                <div class="hero__image-circle">
+                    <img src="./assets/image/Duc Minh.png" alt="Mahmood Fazile" class="hero__image" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+        <div class="section__container">
+            <h2 class="section__title">Services</h2>
+            <p class="section__subtitle">Building modern, responsive, and user-friendly websites.</p>
+            <div class="services__grid">
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+                    </div>
+                    <h3 class="service-card__title">Frontend Development</h3>
+                    <p class="service-card__text">Build responsive website using HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+                    </div>
+                    <h3 class="service-card__title">Web Optimization</h3>
+                    <p class="service-card__text">Improve performance and user experience of websites</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+                    </div>
+                    <h3 class="service-card__title">Debug & Fix UI Bugs</h3>
+                    <p class="service-card__text">Identify and fix layout and styling issues</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+                    </div>
+                    <h3 class="service-card__title">Basic Web Features</h3>
+                    <p class="service-card__text">Implement filtering, search, and local storage features</p>
+                </div>
+
+                <!-- <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+                    </div>
+                    <h3 class="service-card__title">App Design</h3>
+                    <p class="service-card__text">Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet
+                        consectetur</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-card__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+                    </div>
+                    <h3 class="service-card__title">App Design</h3>
+                    <p class="service-card__text">Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet
+                        consectetur</p>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about">
+        <div class="section__container">
+            <h2 class="section__title">About Me</h2>
+            <p class="section__subtitle">User Interface And User Experience And Also Content Creator</p>
+            <div class="about__content">
+                <div class="about__image-wrap">
+                    <div class="about__image-circle">
+                        <img src="./assets/image/Duc Minh.png" alt="About Mahmood" class="about__image" />
+                    </div>
+                </div>
+                <div class="about__text">
+                    <p>I am a software engineering student with a strong interest in frontend development. I enjoy
+                        building responsive and interactive web applications, turning UI designs into real user
+                        experiences.</p>
+                    <p>I have experience working on projects such as a fashion outfit website with features like
+                        filtering, search, and responsive layouts. I also have a solid background in competitive
+                        programming, which helps me approach problems with strong logical thinking and optimization.</p>
+                    <p>I am always eager to learn new technologies, improve my skills, and build products that are both
+                        functional and user-friendly.</p>
+                    <a href="#" class="btn btn--primary about__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" /></svg>
+                        Download CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="skills" id="skills">
+        <div class="section__container">
+            <h2 class="section__title">My Skills</h2>
+            <p class="section__subtitle">Technologies I use to build modern, performant web applications</p>
+
+            <div class="skills__categories">
+
+                <!-- Frontend -->
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Frontend</h3>
+                    <div class="skills__grid">
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 90 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">HTML</div>
+                            </div>
+                            <span class="skill-item__percent">90%</span>
+                            <span class="skill-item__name">HTML5</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 85 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">CSS</div>
+                            </div>
+                            <span class="skill-item__percent">85%</span>
+                            <span class="skill-item__name">CSS3</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 80 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">JS</div>
+                            </div>
+                            <span class="skill-item__percent">80%</span>
+                            <span class="skill-item__name">JavaScript</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 65 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">React</div>
+                            </div>
+                            <span class="skill-item__percent">65%</span>
+                            <span class="skill-item__name">React.js</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 75 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">TS</div>
+                            </div>
+                            <span class="skill-item__percent">75%</span>
+                            <span class="skill-item__name">TypeScript</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Backend</h3>
+                    <div class="skills__grid">
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 60 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">Node</div>
+                            </div>
+                            <span class="skill-item__percent">60%</span>
+                            <span class="skill-item__name">Node.js</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 60 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">Ex</div>
+                            </div>
+                            <span class="skill-item__percent">60%</span>
+                            <span class="skill-item__name">Express.js</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 80 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">PY</div>
+                            </div>
+                            <span class="skill-item__percent">80%</span>
+                            <span class="skill-item__name">Python</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 72 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">SQL</div>
+                            </div>
+                            <span class="skill-item__percent">72%</span>
+                            <span class="skill-item__name">SQL / MySQL</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 65 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">MDB</div>
+                            </div>
+                            <span class="skill-item__percent">65%</span>
+                            <span class="skill-item__name">MongoDB</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skills__category">
+                    <h3 class="skills__category-title">Tools & DevOps</h3>
+                    <div class="skills__grid">
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 85 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">Git</div>
+                            </div>
+                            <span class="skill-item__percent">85%</span>
+                            <span class="skill-item__name">Git / GitHub</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 70 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">DO</div>
+                            </div>
+                            <span class="skill-item__percent">70%</span>
+                            <span class="skill-item__name">Docker</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 75 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">Next</div>
+                            </div>
+                            <span class="skill-item__percent">75%</span>
+                            <span class="skill-item__name">Next.js</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 68 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">AWS</div>
+                            </div>
+                            <span class="skill-item__percent">68%</span>
+                            <span class="skill-item__name">AWS</span>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-item__ring">
+                                <svg viewBox="0 0 120 120" class="skill-item__svg">
+                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
+                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 70 / 100));" />
+                                </svg>
+                                <div class="skill-item__icon skill-item__icon--text">REST</div>
+                            </div>
+                            <span class="skill-item__percent">70%</span>
+                            <span class="skill-item__name">REST API</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section class="portfolio" id="portfolio">
+        <div class="section__container">
+            <h2 class="section__title">Portfolio</h2>
+            <p class="section__subtitle">A selection of my recent design work</p>
+            <div class="portfolio__grid">
+
+                <a href="https://ducminhho106.github.io/SHOPPING-WEBSITE/">
+                    <div class="portfolio-card">
+                        <div class="portfolio-card__img-wrap">
+                            <img src="./assets/image/pf-img/AKKO.png"
+                                alt="Project 1" class="portfolio-card__img" />
+                        </div>
+                        <div class="portfolio-card__info">
+                            <h3 class="portfolio-card__title">Shopping Website</h3>
+                            <span class="portfolio-card__tag">Web Developer</span>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?w=600&q=80" alt="Project 2"
+                            class="portfolio-card__img" />
+                    </div>
+                    <div class="portfolio-card__info">
+                        <h3 class="portfolio-card__title">Dashboard Design</h3>
+                        <span class="portfolio-card__tag">Web Design</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=600&q=80" alt="Project 3"
+                            class="portfolio-card__img" />
+                    </div>
+                    <div class="portfolio-card__info">
+                        <h3 class="portfolio-card__title">Brand Identity</h3>
+                        <span class="portfolio-card__tag">Branding</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80"
+                            alt="Project 4" class="portfolio-card__img" />
+                    </div>
+                    <div class="portfolio-card__info">
+                        <h3 class="portfolio-card__title">E-Commerce App</h3>
+                        <span class="portfolio-card__tag">App Design</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80"
+                            alt="Project 5" class="portfolio-card__img" />
+                    </div>
+                    <div class="portfolio-card__info">
+                        <h3 class="portfolio-card__title">Landing Page</h3>
+                        <span class="portfolio-card__tag">Web Design</span>
+                    </div>
+                </div>
+
+                <div class="portfolio-card">
+                    <div class="portfolio-card__img-wrap">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&q=80"
+                            alt="Project 6" class="portfolio-card__img" />
+                    </div>
+                    <div class="portfolio-card__info">
+                        <h3 class="portfolio-card__title">SaaS Platform</h3>
+                        <span class="portfolio-card__tag">UI Design</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact" id="contact">
+        <div class="section__container">
+            <h2 class="section__title">Contact me</h2>
+            <p class="section__subtitle">Cultivating Connections: Reach Out And Connect With Me</p>
+            <div class="contact__form-wrap">
+                <div class="contact__form">
+                    <div class="contact__row">
+                        <div class="contact__field">
+                            <input type="text" placeholder="Name" class="contact__input" />
+                        </div>
+                        <div class="contact__field">
+                            <input type="email" placeholder="Email" class="contact__input" />
+                        </div>
+                    </div>
+
+                    <div class="contact__row">
+                        <div class="contact__field">
+                            <input type="tel" placeholder="Phone Number" class="contact__input" />
+                        </div>
+                        <div class="contact__field">
+                            <select class="contact__input contact__select">
+                                <option value="" disabled selected>Service Of Interest</option>
+                                <option value="app-design">App Design</option>
+                                <option value="web-design">Web Design</option>
+                                <option value="branding">Branding</option>
+                                <option value="video-editing">Video Editing</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="contact__row">
+                        <div class="contact__field">
+                            <input type="text" placeholder="Timeline" class="contact__input" />
+                        </div>
+                        <div class="contact__field">
+                            <textarea placeholder="Project Details..."
+                                class="contact__input contact__textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="contact__submit-row">
+                        <button class="btn btn--outline contact__btn">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__container">
+            <a href="#" class="footer__logo">LOGO</a>
+            <nav class="footer__nav">
+                <a href="#home" class="footer__link">Home</a>
+                <a href="#services" class="footer__link">Services</a>
+                <a href="#about" class="footer__link">About me</a>
+                <a href="#portfolio" class="footer__link">Portfolio</a>
+                <a href="#contact" class="footer__link">Contact me</a>
+            </nav>
+
+            <div class="footer__socials">
+                <a href="#" class="footer__social" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                </a>
+                <a href="#" class="footer__social" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                </a>
+                <a href="#" class="footer__social" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect x="2" y="9" width="4" height="12" />
+                        <circle cx="4" cy="4" r="2" /></svg>
+                </a>
+                <a href="#" class="footer__social" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <polyline points="22,4 12,13 2,4" /></svg>
+                </a>
+            </div>
+
+            <div class="footer__contact-info">
+                <span class="footer__contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <rect x="2" y="4" width="20" height="16" rx="2" />
+                        <polyline points="22,4 12,13 2,4" /></svg>
+                    hoducminh10@gmail.com
+                </span>
+                <span class="footer__contact-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.61 5.61l.77-.77a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    +08 13 67 8960
+                </span>
+            </div>
+            <div class="footer__divider"></div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
