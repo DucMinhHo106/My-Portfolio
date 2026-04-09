@@ -88,6 +88,7 @@ a {
 
 .btn--outline:hover {
     transform: scale(1.05);
+    border: 1.5px solid var(--clr-accent);
 }
 
 /* =============================================
@@ -239,6 +240,10 @@ a {
     border-radius: var(--radius);
     overflow: hidden;
     width: fit-content;
+}
+
+.hero__stats:hover {
+    border-color: var(--clr-accent);
 }
 
 .hero__stat {
