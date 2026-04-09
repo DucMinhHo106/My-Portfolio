@@ -425,7 +425,7 @@ a {
 
 .achievements__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -438,7 +438,7 @@ a {
 }
 
 .achievement-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .achievement-card__title {
@@ -452,6 +452,13 @@ a {
     font-size: 13px;
     color: var(--clr-text-muted);
     line-height: 1.7;
+}
+
+#achievement-1 {
+    font-weight: 800;
+    font-size: 18px;
+    border: 1px solid var(--clr-accent);
+    box-shadow: 0 0 20px rgba(255, 102, 0, 0.2);
 }
 
 /* =============================================
