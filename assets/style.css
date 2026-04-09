@@ -72,12 +72,22 @@ a {
 .btn--primary {
     background-color: var(--clr-accent);
     color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.btn--primary:hover {
+    transform: scale(1.05);
 }
 
 .btn--outline {
     background-color: transparent;
     color: var(--clr-text);
     border: 1.5px solid var(--clr-border);
+    transition: transform 0.3s ease;
+}
+
+.btn--outline:hover {
+    transform: scale(1.05);
 }
 
 /* =============================================
@@ -260,6 +270,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.hero__image-wrap:hover {
+    transform: scale(1.02);
 }
 
 .hero__image-circle {
@@ -279,6 +294,11 @@ a {
     object-fit: cover;
     object-position: top;
     filter: grayscale(100%);
+    transition: filter 1s ease;
+}
+
+.hero__image:hover {
+    filter: grayscale(0%);
 }
 
 /* =============================================
@@ -299,6 +319,11 @@ a {
     border-radius: var(--radius);
     padding: 32px 24px;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.02);
 }
 
 .service-card__icon {
@@ -362,6 +387,11 @@ a {
     object-fit: cover;
     object-position: top;
     filter: grayscale(100%);
+    transition: filter 1s ease;
+}
+
+.about__image:hover {
+    filter: grayscale(0%);
 }
 
 .about__text p {
@@ -374,6 +404,11 @@ a {
 
 .about__btn {
     margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.about__btn:hover {
+    transform: scale(1.05);
 }
 
 /* =============================================
@@ -423,6 +458,11 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: scale(1.05);
 }
 
 .skill-item__ring {
@@ -504,6 +544,11 @@ a {
     border-radius: var(--radius);
     overflow: hidden;
     background-color: var(--clr-bg-card);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: scale(1.05);
 }
 
 .portfolio-card__img-wrap {
@@ -666,6 +711,11 @@ a {
     align-items: center;
     justify-content: center;
     color: var(--clr-text-muted);
+    transition: transform 0.3s ease;
+}
+
+.footer__social:hover {
+    transform: scale(1.05);
 }
 
 .footer__social svg {
