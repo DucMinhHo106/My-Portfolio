@@ -417,6 +417,44 @@ a {
 }
 
 /* =============================================
+   ACHIEVEMENTS
+   ============================================= */
+.achievements {
+    background-color: var(--clr-bg);
+}
+
+.achievements__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.achievement-card {
+    border-radius: var(--radius);
+    overflow: hidden;
+    background-color: var(--clr-bg-card);
+    transition: transform 0.3s ease;
+    padding: 32px 24px;
+}
+
+.achievement-card:hover {
+    transform: scale(1.05);
+}
+
+.achievement-card__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--clr-accent);
+    margin-bottom: 12px;
+}
+
+.achievement-card__text {
+    font-size: 13px;
+    color: var(--clr-text-muted);
+    line-height: 1.7;
+}
+
+/* =============================================
    SKILLS
    ============================================= */
 .skills {
