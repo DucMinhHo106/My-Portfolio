@@ -157,10 +157,13 @@ a {
     font-size: 14px;
     color: var(--clr-text-muted);
     font-weight: 400;
+    transition: color 0.3s ease;
 }
 
 .navbar__link--active {
     color: var(--clr-accent);
+    font-weight: 600;
+    transform: translateY(-2px) ;
 }
 
 /* =============================================
@@ -523,7 +526,7 @@ a {
 .skill-item__ring {
     position: relative;
     width: 100px;
-    height: 100px;
+    height: 100px; 
 }
 
 .skill-item__svg {
