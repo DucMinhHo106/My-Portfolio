@@ -1,625 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="en" data-theme="dark">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Duc Minh — Web Developer</title>
-    <link rel="stylesheet" href="./assets/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0d13">
+  <meta name="description" content="Ho Nguyen Duc Minh — frontend developer building responsive, user-focused web experiences.">
+  <title>Ho Nguyen Duc Minh — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="preloader" aria-hidden="true"><span class="preloader__mark">DM<span>.</span></span><span class="preloader__line"><i></i></span></div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
-    <!-- ===== NAVBAR ===== -->
-    <header class="navbar">
-        <div class="navbar__container">
-            <a href="#home" class="navbar__logo">Duc Minh</a>
-            <button class="navbar__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">☰</button>
-            <nav class="navbar__nav" id="primary-navigation">
-                <a href="#home" class="navbar__link navbar__link--active">Home</a>
-                <a href="#services" class="navbar__link">Services</a>
-                <a href="#about" class="navbar__link">About me</a>
-                <a href="#skills" class="navbar__link">Skills</a>
-                <a href="#portfolio" class="navbar__link">Portfolio</a>
-                <a href="#contact" class="navbar__link">Contact me</a>
-            </nav>
-            <a href="#contact" class="btn btn--primary">Hire Me</a>
-        </div>
-    </header>
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="brand" href="#home" aria-label="Duc Minh home"><span class="brand__mark">D<span>M</span></span><span class="brand__text">Duc Minh<span class="brand__dot">.</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="nav-links" id="primary-navigation" aria-label="Main navigation">
+        <a class="nav-link is-active" href="#home">Home</a><a class="nav-link" href="#services">Services</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#projects">Projects</a><a class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions"><button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme"><svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg><svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"/></svg></button><a class="nav-cta" href="#contact">Let’s talk <span>↗</span></a></div>
+    </div>
+  </header>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero" id="home">
-        <div class="hero__container">
-            <div class="hero__content">
-                <p class="hero__greeting">Hi I am</p>
-                <h2 class="hero__name">Ho Nguyen Duc Minh</h2>
-                <h1 class="hero__title">Web Developer</h1>
-                <div class="hero__socials">
-                    <a href="https://www.facebook.com/minh.duc.639451/" class="hero__social-link" aria-label="Facebook">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
-                    </a>
-                    <a href="https://github.com/DucMinhHo106" class="hero__social-link" aria-label="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                        </svg>
-                    </a>
-                    <a href="#" class="hero__social-link" aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                            <rect x="2" y="9" width="4" height="12" />
-                            <circle cx="4" cy="4" r="2" /></svg>
-                    </a>
-                    <a href="mailto:hoducminh10@gmail.com" class="hero__social-link" aria-label="Email">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="4" width="20" height="16" rx="2" />
-                            <polyline points="22,4 12,13 2,4" /></svg>
-                    </a>
-                </div>
-                <div class="hero__cta">
-                    <a href="#contact" class="btn btn--primary">Hire Me</a>
-                    <a href="mailto:hoducminh10@gmail.com?subject=Request%20for%20CV" class="btn btn--outline">Request CV</a>
-                </div>
-                <div class="hero__stats">
-                    <div class="hero__stat">
-                        <span class="hero__stat-number">2+</span>
-                        <span class="hero__stat-label">Experiences</span>
-                    </div>
-                    <div class="hero__stat-divider"></div>
-                    <div class="hero__stat">
-                        <span class="hero__stat-number">3+</span>
-                        <span class="hero__stat-label">Project done</span>
-                    </div>
-                    <div class="hero__stat-divider"></div>
-                    <div class="hero__stat">
-                        <span class="hero__stat-number">20+</span>
-                        <span class="hero__stat-label">Happy Clients</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__image-wrap">
-                <div class="hero__image-circle">
-                    <img src="./assets/image/Duc Minh.png" alt="Ho Nguyen Duc Minh" class="hero__image" />
-                </div>
-            </div>
-        </div>
+  <main id="main">
+    <section class="hero section-wrap" id="home" data-section>
+      <div class="hero__copy">
+        <p class="eyebrow"><span class="eyebrow__line"></span> FRONTEND DEVELOPER <span class="eyebrow__index">/ 01</span></p>
+        <p class="hero__hello">Hello, I’m</p>
+        <h1>Ho Nguyen<br><span>Duc Minh</span><i class="hero__period">.</i></h1>
+        <p class="hero__lead">I turn thoughtful designs into fast, responsive web experiences with clean, dependable code.</p>
+        <div class="hero__actions"><a class="button button--primary" href="#projects">Explore my work <span>↘</span></a><a class="button button--quiet" href="mailto:hoducminh10@gmail.com?subject=Request%20for%20CV">Request my CV <span>↗</span></a></div>
+        <div class="hero__socials" aria-label="Social links"><a href="https://github.com/DucMinhHo106" target="_blank" rel="noreferrer">GitHub <span>↗</span></a><a href="https://www.facebook.com/minh.duc.639451/" target="_blank" rel="noreferrer">Facebook <span>↗</span></a><a href="mailto:hoducminh10@gmail.com">Email <span>↗</span></a></div>
+      </div>
+      <div class="hero__visual" aria-label="Portrait of Ho Nguyen Duc Minh">
+        <div class="hero__orbit hero__orbit--one"></div><div class="hero__orbit hero__orbit--two"></div>
+        <div class="hero__image-frame"><img src="./assets/image/Duc Minh.png" alt="Ho Nguyen Duc Minh" fetchpriority="high"></div>
+        <div class="hero__floating hero__floating--code"><span class="float-label">CURRENT FOCUS</span><strong>Interfaces that feel<br>simple and useful.</strong></div>
+        <div class="hero__floating hero__floating--availability"><span class="availability-dot"></span><span>Software engineering student</span></div>
+        <span class="hero__side-note">BASED IN VIETNAM · BUILDING FOR THE WEB</span>
+      </div>
+      <div class="hero__bottom"><span>SCROLL TO EXPLORE</span><span class="hero__scroll-line"></span><span class="hero__coordinates">BUILDING FOR THE WEB</span></div>
     </section>
 
-    <!-- ===== SERVICES ===== -->
-    <section class="services" id="services">
-        <div class="section__container">
-            <h2 class="section__title">Services</h2>
-            <p class="section__subtitle">Building modern, responsive, and user-friendly websites.</p>
-            <div class="services__grid">
+    <section class="intro-band" aria-label="Introduction"><div class="intro-band__inner"><span class="mono-label">A LITTLE ABOUT MY WORK</span><p>Curious by nature. <em>Careful by craft.</em> Focused on building useful things for the web.</p><span class="intro-band__badge">HTML <b>·</b> CSS <b>·</b> JAVASCRIPT</span></div></section>
 
-                <div class="service-card">
-                    <div class="service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                            <circle cx="9" cy="7" r="4" />
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
-                    </div>
-                    <h3 class="service-card__title">Frontend Development</h3>
-                    <p class="service-card__text">Build responsive website using HTML, CSS, JavaScript</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                            <circle cx="9" cy="7" r="4" />
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
-                    </div>
-                    <h3 class="service-card__title">Web Optimization</h3>
-                    <p class="service-card__text">Improve performance and user experience of websites</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                            <circle cx="9" cy="7" r="4" />
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
-                    </div>
-                    <h3 class="service-card__title">Debug & Fix UI Bugs</h3>
-                    <p class="service-card__text">Identify and fix layout and styling issues</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                            <circle cx="9" cy="7" r="4" />
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
-                    </div>
-                    <h3 class="service-card__title">Basic Web Features</h3>
-                    <p class="service-card__text">Implement filtering, search, and local storage features</p>
-                </div>
-
-                <!-- <div class="service-card">
-                    <div class="service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                            <circle cx="9" cy="7" r="4" />
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
-                    </div>
-                    <h3 class="service-card__title">App Design</h3>
-                    <p class="service-card__text">Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet
-                        consectetur</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-card__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                            <circle cx="9" cy="7" r="4" />
-                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                            <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
-                    </div>
-                    <h3 class="service-card__title">App Design</h3>
-                    <p class="service-card__text">Lorem ipsum dolor sit amet . Imperdiet Lorem ipsum dolor sit amet
-                        consectetur</p>
-                </div> -->
-
-            </div>
-        </div>
+    <section class="section section-wrap" id="services" data-section>
+      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow__line"></span> WHAT I DO <span class="eyebrow__index">/ 02</span></p><h2>Thoughtful work,<br><span>built for people.</span></h2></div><p class="section-heading__aside">From a first layout to the final interaction, I care about the details that make a website feel clear and reliable.</p></div>
+      <div class="services-grid">
+        <article class="service-card reveal"><span class="service-card__number">01</span><div class="service-card__icon">{ }</div><h3>Frontend development</h3><p>Responsive interfaces built from clear components and maintainable code.</p><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+        <article class="service-card reveal"><span class="service-card__number">02</span><div class="service-card__icon">⌘</div><h3>UI implementation</h3><p>Turning design files and product ideas into polished, accessible screens.</p><div class="tag-row"><span>Responsive</span><span>Accessibility</span></div></article>
+        <article class="service-card reveal"><span class="service-card__number">03</span><div class="service-card__icon">↗</div><h3>Interactive features</h3><p>Search, filters, navigation and browser-based features that work smoothly.</p><div class="tag-row"><span>Interactions</span><span>Local storage</span></div></article>
+        <article class="service-card reveal"><span class="service-card__number">04</span><div class="service-card__icon">◌</div><h3>UI refinement</h3><p>Improving responsive behavior, visual consistency and small usability details.</p><div class="tag-row"><span>Debugging</span><span>Optimization</span></div></article>
+      </div>
     </section>
 
-    <!-- ===== ABOUT ===== -->
-    <section class="about" id="about">
-        <div class="section__container">
-            <h2 class="section__title">About Me</h2>
-            <p class="section__subtitle">User Interface And User Experience And Also Video Editor</p>
-            <div class="about__content">
-                <div class="about__image-wrap">
-                    <div class="about__image-circle">
-                        <img src="./assets/image/Duc Minh.png" alt="Ho Nguyen Duc Minh" class="about__image" />
-                    </div>
-                </div>
-                <div class="about__text">
-                    <p>I am a software engineering student with a strong interest in frontend development. I enjoy
-                        building responsive and interactive web applications, turning UI designs into real user
-                        experiences.</p>
-                    <p>I have experience working on projects such as a fashion outfit website with features like
-                        filtering, search, and responsive layouts. I also have a solid background in competitive
-                        programming, which helps me approach problems with strong logical thinking and optimization.</p>
-                    <p>I am always eager to learn new technologies, improve my skills, and build products that are both
-                        functional and user-friendly.</p>
-                    <a href="mailto:hoducminh10@gmail.com?subject=Request%20for%20CV" class="btn btn--primary about__btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                            <polyline points="7 10 12 15 17 10" />
-                            <line x1="12" y1="15" x2="12" y2="3" /></svg>
-                        Request CV
-                    </a>
-                </div>
-            </div>
-        </div>
+    <section class="section section-wrap about-section" id="about" data-section>
+      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow__line"></span> A BIT MORE ABOUT ME <span class="eyebrow__index">/ 03</span></p><h2>Learning fast.<br><span>Building with care.</span></h2></div></div>
+      <div class="about-layout"><div class="about-photo reveal"><img src="./assets/image/Duc Minh.png" alt="Duc Minh at work" loading="lazy"><span class="about-photo__caption">THE PERSON BEHIND THE PIXELS</span></div><div class="about-copy reveal"><p class="about-copy__lead">I’m a software engineering student with a strong interest in frontend development and a love for making ideas feel real on screen.</p><p>I enjoy shaping responsive interfaces, exploring how people use products, and refining the details that make a page easier to understand. My projects range from storefronts and styling tools to a coffee ordering experience.</p><p>Competitive programming has taught me to break problems into smaller steps. I bring that same patience to learning, building, and improving each project.</p><div class="about-facts"><div><span class="mono-label">CURRENTLY</span><strong>Studying software engineering</strong></div><div><span class="mono-label">INTERESTED IN</span><strong>Frontend & product experiences</strong></div></div><a class="text-link" href="mailto:hoducminh10@gmail.com?subject=Let%E2%80%99s%20connect">Get in touch <span>↗</span></a></div></div>
     </section>
 
-    <!-- ===== ACHIVEMENTS ===== -->
-    <section class="achievements" id="achievements">
-        <div class="section__container">
-            <h2 class="section__title">My Achievements</h2>
-            <p class="section__subtitle">Highlights of my career so far</p>
-            <div class="achievements__grid">
-                <div class="achievement-card" id="achievement-1">
-                    <h3 class="achievement-card__title">Honorable Mention</h3>
-                    <p class="achievement-card__text">The 2024 ICPC Asia Hanoi Regional Contest</p>
-                </div>
-                <div class="achievement-card">
-                    <h3 class="achievement-card__title">Honorable Mention</h3>
-                    <p class="achievement-card__text">The 2024, 2025 ICPC Vietnam National Contest</p>
-                </div>
-                <div class="achievement-card">
-                    <h3 class="achievement-card__title">Third Prize</h3>
-                    <p class="achievement-card__text">Provincial Informatics Contest, Thua Thien Hue (2023–2024)</p>
-                </div>
-                <div class="achievement-card">
-                    <h3 class="achievement-card__title">Second Prize</h3>
-                    <p class="achievement-card__text">Hai Ba Trung High School Mathematics Contest (2023–2024)</p>
-                </div>
-            </div>
-        </div>
+    <section class="stats-band"><div class="stats-grid section-wrap"><div class="stat-item reveal"><strong data-count="2" data-suffix="+">0</strong><span>Experience highlights</span></div><div class="stat-item reveal"><strong data-count="3" data-suffix="+">0</strong><span>Projects completed</span></div><div class="stat-item reveal"><strong data-count="20" data-suffix="+">0</strong><span>Happy clients</span></div><div class="stat-item stats-note reveal"><span class="availability-dot"></span><p>Always learning.<br><b>Always improving.</b></p></div></div></section>
+
+    <section class="section section-wrap" id="projects" data-section>
+      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow__line"></span> SELECTED PROJECTS <span class="eyebrow__index">/ 04</span></p><h2>Some things<br><span>I’ve made.</span></h2></div><a class="text-link section-heading__link" href="https://github.com/DucMinhHo106?tab=repositories" target="_blank" rel="noreferrer">All repositories <span>↗</span></a></div>
+      <div class="project-toolbar reveal"><p>A few builds from my frontend journey.</p><div class="project-filters" role="group" aria-label="Filter projects"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All <span>03</span></button><button class="filter-button" type="button" data-filter="store" aria-pressed="false">Storefronts</button><button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web experiences</button></div></div>
+      <div class="project-grid">
+        <article class="project-card reveal" data-category="store"><a class="project-card__visual project-card__visual--shop" href="https://ducminhho106.github.io/SHOPPING-WEBSITE/" target="_blank" rel="noreferrer" aria-label="Open AKKO Shopping Website"><img src="./assets/image/pf-img/AKKO.png" alt="AKKO keyboard storefront preview" loading="lazy"><span class="project-card__open">↗</span></a><div class="project-card__meta"><span>01 / E-COMMERCE</span><span>PERSONAL PROJECT</span></div><div class="project-card__title-row"><div><h3>AKKO Shopping Website</h3><p>Keyboard storefront · Product browsing · Cart</p></div><span class="project-card__arrow">↗</span></div><div class="project-card__footer"><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://ducminhho106.github.io/SHOPPING-WEBSITE/" target="_blank" rel="noreferrer">Live site ↗</a><a href="https://github.com/DucMinhHo106/SHOPPING-WEBSITE" target="_blank" rel="noreferrer">Source ↗</a></div></div></article>
+        <article class="project-card reveal" data-category="web"><a class="project-card__visual project-card__visual--style" href="https://ducminhho106.github.io/Outfit-Styling-Website/" target="_blank" rel="noreferrer" aria-label="Open Outfit Styling Website"><img src="https://cdn.mos.cms.futurecdn.net/yRnvMmjNswLzyuWaSybCDH.jpg" alt="Outfit styling project preview" loading="lazy"><span class="project-card__open">↗</span></a><div class="project-card__meta"><span>02 / STYLE & DISCOVERY</span><span>PERSONAL PROJECT</span></div><div class="project-card__title-row"><div><h3>Outfit Styling Website</h3><p>Style discovery · Outfit inspiration · Filters</p></div><span class="project-card__arrow">↗</span></div><div class="project-card__footer"><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://ducminhho106.github.io/Outfit-Styling-Website/" target="_blank" rel="noreferrer">Live site ↗</a><a href="https://github.com/DucMinhHo106/Outfit-Styling-Website" target="_blank" rel="noreferrer">Source ↗</a></div></div></article>
+        <article class="project-card reveal" data-category="store"><a class="project-card__visual project-card__visual--commerce" href="https://github.com/DucMinhHo106/E-Commerce" target="_blank" rel="noreferrer" aria-label="Open E-Commerce source repository"><span class="commerce-preview"><span class="commerce-preview__top"><i></i><i></i><i></i><b>HOME / LIVING</b></span><strong>Electronics for<br>everyday living.</strong><span class="commerce-preview__products"><i></i><i></i><i></i></span><small>DISCOVER THE COLLECTION&nbsp; →</small></span><span class="project-card__open">↗</span></a><div class="project-card__meta"><span>03 / E-COMMERCE</span><span>PERSONAL PROJECT</span></div><div class="project-card__title-row"><div><h3>Điện Máy Store</h3><p>Electronics catalog · Filtering · Cart flow</p></div><span class="project-card__arrow">↗</span></div><div class="project-card__footer"><div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-links"><a href="https://github.com/DucMinhHo106/E-Commerce" target="_blank" rel="noreferrer">View source ↗</a></div></div></article>
+      </div>
+      <p class="projects-empty" hidden>No projects in this category yet.</p>
     </section>
 
-    <!-- ===== SKILLS ===== -->
-    <section class="skills" id="skills">
-        <div class="section__container">
-            <h2 class="section__title">My Skills</h2>
-            <p class="section__subtitle">Technologies I use to build modern, performant web applications</p>
-
-            <div class="skills__categories">
-
-                <!-- Frontend -->
-                <div class="skills__category">
-                    <h3 class="skills__category-title">Frontend</h3>
-                    <div class="skills__grid">
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 90 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">HTML</div>
-                            </div>
-                            <span class="skill-item__percent">90%</span>
-                            <span class="skill-item__name">HTML5</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 85 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">CSS</div>
-                            </div>
-                            <span class="skill-item__percent">85%</span>
-                            <span class="skill-item__name">CSS3</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 80 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">JS</div>
-                            </div>
-                            <span class="skill-item__percent">80%</span>
-                            <span class="skill-item__name">JavaScript</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 65 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">React</div>
-                            </div>
-                            <span class="skill-item__percent">65%</span>
-                            <span class="skill-item__name">React.js</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 75 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">TS</div>
-                            </div>
-                            <span class="skill-item__percent">75%</span>
-                            <span class="skill-item__name">TypeScript</span>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Backend -->
-                <div class="skills__category">
-                    <h3 class="skills__category-title">Backend</h3>
-                    <div class="skills__grid">
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 60 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">Node</div>
-                            </div>
-                            <span class="skill-item__percent">60%</span>
-                            <span class="skill-item__name">Node.js</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 60 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">Ex</div>
-                            </div>
-                            <span class="skill-item__percent">60%</span>
-                            <span class="skill-item__name">Express.js</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 80 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">PY</div>
-                            </div>
-                            <span class="skill-item__percent">80%</span>
-                            <span class="skill-item__name">Python</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 72 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">SQL</div>
-                            </div>
-                            <span class="skill-item__percent">72%</span>
-                            <span class="skill-item__name">SQL / MySQL</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 65 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">MDB</div>
-                            </div>
-                            <span class="skill-item__percent">65%</span>
-                            <span class="skill-item__name">MongoDB</span>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Tools -->
-                <div class="skills__category">
-                    <h3 class="skills__category-title">Tools & DevOps</h3>
-                    <div class="skills__grid">
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 85 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">Git</div>
-                            </div>
-                            <span class="skill-item__percent">85%</span>
-                            <span class="skill-item__name">Git / GitHub</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 70 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">DO</div>
-                            </div>
-                            <span class="skill-item__percent">70%</span>
-                            <span class="skill-item__name">Docker</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 75 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">Next</div>
-                            </div>
-                            <span class="skill-item__percent">75%</span>
-                            <span class="skill-item__name">Next.js</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 68 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">AWS</div>
-                            </div>
-                            <span class="skill-item__percent">68%</span>
-                            <span class="skill-item__name">AWS</span>
-                        </div>
-
-                        <div class="skill-item">
-                            <div class="skill-item__ring">
-                                <svg viewBox="0 0 120 120" class="skill-item__svg">
-                                    <circle class="skill-item__track" cx="60" cy="60" r="50" />
-                                    <circle class="skill-item__progress" cx="60" cy="60" r="50"
-                                        style="stroke-dashoffset: calc(314 - (314 * 70 / 100));" />
-                                </svg>
-                                <div class="skill-item__icon skill-item__icon--text">REST</div>
-                            </div>
-                            <span class="skill-item__percent">70%</span>
-                            <span class="skill-item__name">REST API</span>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <section class="section achievements-section section-wrap" id="achievements" data-section>
+      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow__line"></span> MILESTONES <span class="eyebrow__index">/ 05</span></p><h2>Curiosity, with<br><span>a competitive edge.</span></h2></div><p class="section-heading__aside">A few milestones that reflect the problem-solving mindset I bring to my work.</p></div>
+      <div class="achievement-list"><article class="achievement-row reveal"><span>01</span><div><h3>Honorable Mention</h3><p>The 2024 ICPC Asia Hanoi Regional Contest</p></div><span class="achievement-row__year">2024</span></article><article class="achievement-row reveal"><span>02</span><div><h3>Honorable Mention</h3><p>The 2024, 2025 ICPC Vietnam National Contest</p></div><span class="achievement-row__year">2024—25</span></article><article class="achievement-row reveal"><span>03</span><div><h3>Third Prize</h3><p>Provincial Informatics Contest, Thua Thien Hue</p></div><span class="achievement-row__year">2023—24</span></article><article class="achievement-row reveal"><span>04</span><div><h3>Second Prize</h3><p>Hai Ba Trung High School Mathematics Contest</p></div><span class="achievement-row__year">2023—24</span></article></div>
     </section>
 
-    <!-- ===== PORTFOLIO ===== -->
-    <section class="portfolio" id="portfolio">
-        <div class="section__container">
-            <h2 class="section__title">Portfolio</h2>
-            <p class="section__subtitle">A selection of my recent design work</p>
-            <div class="portfolio__grid">
-
-                <a href="https://ducminhho106.github.io/SHOPPING-WEBSITE/">
-                    <div class="portfolio-card">
-                        <div class="portfolio-card__img-wrap">
-                            <img src="https://akko.vn/wp-content/uploads/2023/04/5075B-Plus-goku-naruto-1400x510.jpg"
-                                alt="Project 1" class="portfolio-card__img" />
-                        </div>
-                        <div class="portfolio-card__info">
-                            <h3 class="portfolio-card__title">Shopping Web</h3>
-                            <span class="portfolio-card__tag">Frontend Development</span>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="https://ducminhho106.github.io/Outfit-Styling-Website/">
-                    <div class="portfolio-card">
-                        <div class="portfolio-card__img-wrap">
-                            <img src="https://cdn.mos.cms.futurecdn.net/yRnvMmjNswLzyuWaSybCDH.jpg"
-                                alt="Project 2" class="portfolio-card__img" />
-                        </div>
-                        <div class="portfolio-card__info">
-                            <h3 class="portfolio-card__title">Outfit Styling Web</h3>
-                            <span class="portfolio-card__tag">Frontend Development</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+    <section class="section section-wrap skills-section" id="skills" data-section>
+      <div class="section-heading reveal"><div><p class="eyebrow"><span class="eyebrow__line"></span> TOOLS I USE <span class="eyebrow__index">/ 06</span></p><h2>My everyday<br><span>toolkit.</span></h2></div><p class="section-heading__aside">A growing toolkit for building interfaces, connecting services and shipping projects.</p></div>
+      <div class="skills-groups"><div class="skill-group reveal"><h3>Frontend</h3><div class="skill-pills"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React.js</span><span>TypeScript</span><span>Next.js</span></div></div><div class="skill-group reveal"><h3>Backend & data</h3><div class="skill-pills"><span>Node.js</span><span>Express.js</span><span>Python</span><span>SQL / MySQL</span><span>MongoDB</span><span>REST API</span></div></div><div class="skill-group reveal"><h3>Tools</h3><div class="skill-pills"><span>Git / GitHub</span><span>Docker</span><span>AWS</span></div></div></div>
     </section>
 
-    <!-- ===== CONTACT ===== -->
-    <section class="contact" id="contact">
-        <div class="section__container">
-            <h2 class="section__title">Contact me</h2>
-            <p class="section__subtitle">Cultivating Connections: Reach Out And Connect With Me</p>
-            <div class="contact__form-wrap">
-                <form class="contact__form" id="contactForm">
-                    <div class="contact__row">
-                        <div class="contact__field">
-                            <input type="text" name="name" placeholder="Name" class="contact__input" autocomplete="name" required />
-                        </div>
-                        <div class="contact__field">
-                            <input type="email" name="email" placeholder="Email" class="contact__input" autocomplete="email" required />
-                        </div>
-                    </div>
-
-                    <div class="contact__row">
-                        <div class="contact__field">
-                            <input type="tel" name="phone" placeholder="Phone Number" class="contact__input" autocomplete="tel" />
-                        </div>
-                        <div class="contact__field">
-                            <select name="service" class="contact__input contact__select" required>
-                                <option value="" disabled selected>Service Of Interest</option>
-                                <option value="app-design">App Design</option>
-                                <option value="web-design">Web Design</option>
-                                <option value="branding">Branding</option>
-                                <option value="video-editing">Video Editing</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="contact__row">
-                        <div class="contact__field">
-                            <input type="text" name="timeline" placeholder="Timeline" class="contact__input" />
-                        </div>
-                        <div class="contact__field">
-                            <textarea name="details" placeholder="Project Details..." required
-                                class="contact__input contact__textarea"></textarea>
-                        </div>
-                    </div>
-                    <div class="contact__submit-row">
-                        <button type="submit" class="btn btn--outline contact__btn">Send via email</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+    <section class="contact-section" id="contact" data-section>
+      <div class="contact-inner section-wrap reveal"><div class="contact-copy"><p class="eyebrow"><span class="eyebrow__line"></span> HAVE A PROJECT IN MIND? <span class="eyebrow__index">/ 07</span></p><h2>Let’s make<br><span>something useful.</span></h2><p>Have an idea, a role, or just want to connect? Send a note and I’ll get back to you.</p><a class="contact-email" href="mailto:hoducminh10@gmail.com">hoducminh10@gmail.com <span>↗</span></a></div><form class="contact-form" id="contactForm"><label>Your name<input type="text" name="name" autocomplete="name" placeholder="How should I call you?" required></label><label>Email address<input type="email" name="email" autocomplete="email" placeholder="you@example.com" required></label><label>What are you looking for?<select name="service" required><option value="" disabled selected>Choose a topic</option><option>Website project</option><option>Frontend opportunity</option><option>Something else</option></select></label><label>Tell me a little about it<textarea name="details" rows="4" placeholder="A few details to get us started…" required></textarea></label><button class="button button--primary contact-submit" type="submit">Open email draft <span>↗</span></button><p class="form-note">Your email app will open with your message prepared.</p></form></div>
     </section>
+  </main>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="footer__container">
-            <a href="#home" class="footer__logo">Duc Minh</a>
-            <nav class="footer__nav">
-                <a href="#home" class="footer__link">Home</a>
-                <a href="#services" class="footer__link">Services</a>
-                <a href="#about" class="footer__link">About me</a>
-                <a href="#portfolio" class="footer__link">Portfolio</a>
-                <a href="#contact" class="footer__link">Contact me</a>
-            </nav>
-
-            <div class="footer__socials">
-                <a href="https://www.facebook.com/minh.duc.639451/" class="footer__social" aria-label="Facebook">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
-                </a>
-                <a href="https://github.com/DucMinhHo106" class="footer__social" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                    </svg>
-                </a>
-                <a href="#" class="footer__social" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
-                        <rect x="2" y="9" width="4" height="12" />
-                        <circle cx="4" cy="4" r="2" /></svg>
-                </a>
-                <a href="mailto:hoducminh10@gmail.com" class="footer__social" aria-label="Email" alt="Feel free to contact me for opportunities">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="4" width="20" height="16" rx="2" />
-                        <polyline points="22,4 12,13 2,4" /></svg>
-                </a>
-            </div>
-
-            <div class="footer__contact-info">
-                <span class="footer__contact-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2">
-                        <rect x="2" y="4" width="20" height="16" rx="2" />
-                        <polyline points="22,4 12,13 2,4" /></svg>
-                    hoducminh10@gmail.com
-                </span>
-                <span class="footer__contact-item">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2">
-                        <path
-                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.61 5.61l.77-.77a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                    </svg>
-                    +08 13 67 8960
-                </span>
-            </div>
-            <div class="footer__divider"></div>
-        </div>
-    </footer>
-
-    <!-- SCRIPT -->
-    <script src="./assets/js/action.js"></script>
+  <footer class="site-footer"><div class="footer-top section-wrap"><a class="brand" href="#home"><span class="brand__mark">D<span>M</span></span><span class="brand__text">Duc Minh<span class="brand__dot">.</span></span></a><p>Built with care, curiosity, and a lot of browser tabs.</p><a class="back-top" href="#home">Back to top ↑</a></div><div class="footer-bottom section-wrap"><span>© <span id="currentYear"></span> Ho Nguyen Duc Minh</span><div><a href="https://github.com/DucMinhHo106" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.facebook.com/minh.duc.639451/" target="_blank" rel="noreferrer">Facebook ↗</a><a href="mailto:hoducminh10@gmail.com">Email ↗</a></div><span>DESIGNED & BUILT BY DUC MINH</span></div></footer>
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button><div class="toast" role="status" aria-live="polite"></div>
+  <script src="./assets/js/action.js" defer></script>
 </body>
-
 </html>
