@@ -116,15 +116,20 @@ img { display: block; max-width: 100%; }
 .hero__image-frame::after { position: absolute; inset: 0; content: ''; background: linear-gradient(180deg, transparent 48%, rgba(8, 12, 18, .26)); pointer-events: none; }
 .hero__image-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center 28%; filter: saturate(.82); }
 .hero__orbit { position: absolute; border: 1px solid var(--line); border-radius: 50%; pointer-events: none; }
-.hero__orbit--one { width: 92%; aspect-ratio: 1; animation: orbit-spin 40s linear infinite; }
+.hero__orbit--one { width: 80%; aspect-ratio: 1; animation: orbit-spin 40s linear infinite; }
 .hero__orbit--one::before, .hero__orbit--two::after { position: absolute; width: 7px; height: 7px; border-radius: 50%; content: ''; background: var(--accent); box-shadow: 0 0 20px var(--accent); }
 .hero__orbit--one::before { top: 13%; left: 17%; }
-.hero__orbit--two { width: 78%; aspect-ratio: 1; border-style: dashed; opacity: .52; animation: orbit-spin 60s linear infinite reverse; }
+.hero__orbit--two { width: 88%; aspect-ratio: 1; border-style: dashed; opacity: .52; animation: orbit-spin 60s linear infinite reverse; }
 .hero__orbit--two::after { right: 8%; bottom: 24%; width: 5px; height: 5px; background: var(--blue); }
-.hero__orbit--three { width: 64%; aspect-ratio: 1; border-style: dotted; opacity: .38; animation: orbit-spin 32s linear infinite reverse; }
-.hero__orbit--four { width: 84%; aspect-ratio: 1; border-style: dashed; opacity: .32; animation: orbit-spin 52s linear infinite; }
-.hero__orbit--five { width: 102%; aspect-ratio: 1; opacity: .26; animation: orbit-spin 68s linear infinite reverse; }
-.hero__orbit--six { width: 112%; aspect-ratio: 1; border-style: dotted; opacity: .18; animation: orbit-spin 84s linear infinite; }
+.hero__orbit--three::before, .hero__orbit--four::after, .hero__orbit--five::before, .hero__orbit--six::after { position: absolute; width: 6px; height: 6px; border-radius: 50%; content: ""; background: var(--accent); box-shadow: 0 0 16px var(--accent); }
+.hero__orbit--three::before { top: 6%; left: 51%; }
+.hero__orbit--four::after { top: 52%; right: 4%; background: var(--blue); box-shadow: 0 0 16px var(--blue); }
+.hero__orbit--five::before { bottom: 4%; left: 51%; }
+.hero__orbit--six::after { top: 50%; left: 0; }
+.hero__orbit--three { width: 96%; aspect-ratio: 1; border-style: dotted; opacity: .38; animation: orbit-spin 32s linear infinite reverse; }
+.hero__orbit--four { width: 104%; aspect-ratio: 1; border-style: dashed; opacity: .32; animation: orbit-spin 52s linear infinite; }
+.hero__orbit--five { width: 112%; aspect-ratio: 1; opacity: .26; animation: orbit-spin 68s linear infinite reverse; }
+.hero__orbit--six { width: 120%; aspect-ratio: 1; border-style: dotted; opacity: .18; animation: orbit-spin 84s linear infinite; }
 @keyframes orbit-spin { to { transform: rotate(360deg); } }
 .hero__floating { position: absolute; z-index: 3; padding: 15px 17px; border: 1px solid var(--line-strong); border-radius: 8px; background: color-mix(in srgb, var(--surface) 88%, transparent); box-shadow: var(--shadow); backdrop-filter: blur(15px); animation: float 6s ease-in-out infinite; }
 .hero__floating--code { top: 17%; right: -1%; }
@@ -234,8 +239,8 @@ img { display: block; max-width: 100%; }
 .achievements-section { padding-top: 20px; }
 .achievement-list { border-top: 1px solid var(--line); }
 .achievement-row { position: relative; min-height: 94px; display: grid; grid-template-columns: 70px 1fr 100px; align-items: center; gap: 18px; border-bottom: 1px solid var(--line); transition: padding .25s ease, background .25s; }
-.achievement-row::after { position: absolute; inset: 0; border: 1px solid var(--accent); content: ""; pointer-events: none; clip-path: inset(0 100% 0 0); transition: clip-path 2s ease; }
-.achievement-row:hover::after { clip-path: inset(0); }
+.achievement-row::after { position: absolute; inset: 0; z-index: 1; border: 1px solid var(--accent); content: ""; pointer-events: none; opacity: 0; transform: scaleX(.04); transform-origin: left center; box-shadow: 0 0 18px var(--accent-soft), inset 0 0 16px var(--accent-soft); transition: transform 2s ease, opacity .12s ease; }
+.achievement-row:hover::after { opacity: 1; transform: scaleX(1); }
 .achievement-row:hover { padding-inline: 14px; background: var(--surface); }
 .achievement-row > span:first-child, .achievement-row__year { color: var(--text-dim); font-family: var(--mono); font-size: calc(10px + 5px); }
 .achievement-row h3 { margin: 0; font-size: calc(15px + 5px); font-weight: 500; }
