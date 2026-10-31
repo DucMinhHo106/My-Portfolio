@@ -16,7 +16,7 @@
     root.dataset.theme = theme;
     try { localStorage.setItem('dm-portfolio-theme', theme); } catch { /* storage can be unavailable */ }
     themeToggle?.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#0a0d13' : '#f3f5f2');
+    document.querySelector('meta[name="theme-color"]')?.setAttribute('content', theme === 'dark' ? '#08090c' : '#f4f1f2');
   };
 
   try {
