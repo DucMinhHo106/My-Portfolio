@@ -261,6 +261,7 @@ img { display: block; max-width: 100%; }
 
 .site-footer { border-top: 1px solid var(--line); }
 .footer-top { min-height: 112px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand__image { display: block; width: 44px; height: 44px; flex: 0 0 44px; object-fit: cover; border: 1px solid var(--line-strong); border-radius: 10px; }
 .footer-top > p { color: var(--text-muted); font-size: 11px; }
 .back-top { color: var(--text-muted); font-family: var(--mono); font-size: 10px; transition: color .2s; }
 .back-top:hover { color: var(--accent); }
