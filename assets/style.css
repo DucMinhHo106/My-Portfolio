@@ -174,6 +174,7 @@ img { display: block; max-width: 100%; }
 .about-layout { display: grid; grid-template-columns: .82fr 1.18fr; align-items: center; gap: clamp(50px, 9vw, 120px); }
 .about-photo { position: relative; width: 100%; max-width: 420px; aspect-ratio: .9; padding: 14px; border: 1px solid var(--line-strong); }
 .about-photo::before { position: absolute; top: -9px; left: -9px; width: 80px; height: 80px; border-top: 2px solid var(--accent); border-left: 2px solid var(--accent); content: ''; }
+.about-photo::after { position: absolute; right: -9px; bottom: -9px; width: 80px; height: 80px; border-right: 2px solid var(--accent); border-bottom: 2px solid var(--accent); content: ''; pointer-events: none; }
 .about-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 28%; filter: saturate(.75); }
 .about-photo__caption { position: absolute; right: -20px; bottom: 33px; padding: 8px 12px; color: var(--accent-ink); background: var(--accent); font-family: var(--mono); font-size: calc(8px + 5px); letter-spacing: .1em; }
 .about-copy__lead { margin: 0 0 22px; font-size: calc(clamp(20px, 2.8vw, 29px) + 5px); line-height: 1.4; letter-spacing: -.04em; }
@@ -238,8 +239,11 @@ img { display: block; max-width: 100%; }
 
 .achievements-section { padding-top: 20px; }
 .achievement-list { border-top: 1px solid var(--line); }
-.achievement-row { position: relative; min-height: 94px; display: grid; grid-template-columns: 70px 1fr 100px; align-items: center; gap: 18px; border-bottom: 1px solid var(--line); transition: padding .25s ease, background .25s; }
-.achievement-row::after { position: absolute; inset: 0; z-index: 1; border: 1px solid var(--accent); content: ""; pointer-events: none; opacity: 0; transform: scaleX(.04); transform-origin: left center; box-shadow: 0 0 18px var(--accent-soft), inset 0 0 16px var(--accent-soft); transition: transform 2s ease, opacity .12s ease; }
+.achievement-row { position: relative; isolation: isolate; min-height: 94px; display: grid; grid-template-columns: 70px 1fr 100px; align-items: center; gap: 18px; border-bottom: 1px solid var(--line); transition: padding .25s ease, background .25s; }
+.achievement-row > * { position: relative; z-index: 2; }
+.achievement-row::before { position: absolute; inset: 0; z-index: 1; content: ""; pointer-events: none; opacity: 0; background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 16%, transparent), color-mix(in srgb, var(--accent) 7%, transparent)); clip-path: inset(0 100% 0 0); transition: clip-path 2s ease, opacity .12s ease; }
+.achievement-row::after { position: absolute; inset: 0; z-index: 3; border: 1px solid var(--accent); content: ""; pointer-events: none; opacity: 0; transform: scaleX(.04); transform-origin: left center; box-shadow: 0 0 18px var(--accent-soft), inset 0 0 16px var(--accent-soft); transition: transform 2s ease, opacity .12s ease; }
+.achievement-row:hover::before { opacity: 1; clip-path: inset(0); }
 .achievement-row:hover::after { opacity: 1; transform: scaleX(1); }
 .achievement-row:hover { padding-inline: 14px; background: var(--surface); }
 .achievement-row > span:first-child, .achievement-row__year { color: var(--text-dim); font-family: var(--mono); font-size: calc(10px + 5px); }
