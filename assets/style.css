@@ -41,7 +41,7 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+html { overflow-x: clip; scroll-behavior: smooth; scroll-padding-top: 96px; }
 body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font); font-size: calc(16px + 5px); line-height: 1.65; transition: background-color .35s ease, color .35s ease; }
 body, button, input, select, textarea { font-family: var(--font); }
 body::before { position: fixed; inset: 0; z-index: -1; pointer-events: none; content: ''; opacity: .2; background-image: radial-gradient(rgba(160, 180, 203, .28) .65px, transparent .65px); background-size: 20px 20px; mask-image: linear-gradient(to bottom, #000 0%, transparent 66%); }
@@ -298,6 +298,12 @@ img { display: block; max-width: 100%; }
   .hero { min-height: 760px; grid-template-columns: 1.05fr .95fr; gap: 1%; }
   .hero h1 { font-size: calc(clamp(57px, 8vw, 78px) + 5px); }
   .hero__floating--code { right: -6%; }
+  .hero__orbit--one { width: 75%; }
+  .hero__orbit--two { width: 80%; }
+  .hero__orbit--three { width: 85%; }
+  .hero__orbit--four { width: 90%; }
+  .hero__orbit--five { width: 95%; }
+  .hero__orbit--six { width: 100%; }
   .services-grid { grid-template-columns: repeat(2, 1fr); }
   .service-card { min-height: 250px; }
   .stats-note { padding-left: 22px; }
