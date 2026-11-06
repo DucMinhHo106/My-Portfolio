@@ -146,7 +146,7 @@ img { display: block; max-width: 100%; }
 .intro-band { border-block: 1px solid var(--line); background: var(--bg-soft); }
 .intro-band__inner { width: min(var(--max), calc(100% - 64px)); min-height: 142px; margin: auto; display: grid; grid-template-columns: .55fr 1.5fr .8fr; align-items: center; gap: 32px; }
 .intro-band .mono-label { white-space: nowrap; }
-.intro-band p { max-width: 570px; margin: 0; font-size: calc(clamp(19px, 2.5vw, 28px) + 5px); line-height: 1.35; letter-spacing: -.045em; }
+.intro-band p { max-width: 570px; margin: 0 auto; font-size: calc(clamp(19px, 2.5vw, 28px) - 3px); line-height: 1.35; letter-spacing: -.045em; text-align: center; text-wrap: balance; }
 .intro-band p em { color: var(--text-muted); font-style: normal; }
 .intro-band__badge { justify-self: end; color: var(--text-muted); font-family: var(--mono); font-size: calc(9px + 5px); letter-spacing: .1em; white-space: nowrap; }
 .intro-band__badge b { padding-inline: 5px; color: var(--accent); }
