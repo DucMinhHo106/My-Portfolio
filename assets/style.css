@@ -200,7 +200,10 @@ img { display: block; max-width: 100%; }
 .stats-note b { color: var(--text); font-weight: 500; }
 
 .project-toolbar { margin-bottom: 23px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-.project-toolbar > p { margin: 0; color: var(--text-muted); font-size: calc(12px + 5px); }
+.project-toolbar { flex-wrap: wrap; }
+.project-search { display: grid; gap: 8px; width: min(100%, 320px); color: var(--text-muted); font-size: 14px; }
+.project-search input { box-sizing: border-box; width: 100%; min-width: 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 5px; background: var(--surface); color: var(--text); font: inherit; }
+.project-search input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .project-filters { display: flex; flex-wrap: wrap; gap: 5px; }
 .filter-button { padding: 8px 11px; border: 1px solid transparent; border-radius: 5px; color: var(--text-muted); background: transparent; font-size: calc(10px + 5px); cursor: pointer; transition: color .2s, background .2s, border .2s; }
 .filter-button span { margin-left: 4px; color: var(--text-dim); font-family: var(--mono); font-size: calc(9px + 5px); }

@@ -117,23 +117,39 @@
 
   const projectCards = [...document.querySelectorAll('.project-card')];
   const emptyState = document.querySelector('.projects-empty');
-  document.querySelectorAll('.filter-button').forEach((button) => {
+  const projectSearch = document.querySelector('#project-search');
+  const filterButtons = [...document.querySelectorAll('.filter-button')];
+  let activeFilter = filterButtons.find((button) => button.classList.contains('is-active'))?.dataset.filter || 'all';
+
+  const applyProjectFilters = () => {
+    const query = (projectSearch?.value || '').trim().toLowerCase();
+    let visibleCount = 0;
+    projectCards.forEach((card) => {
+      const name = card.querySelector('h3')?.textContent.toLowerCase() || '';
+      const matchesCategory = activeFilter === 'all' || card.dataset.category === activeFilter;
+      const visible = matchesCategory && name.includes(query);
+      card.hidden = !visible;
+      if (visible) visibleCount += 1;
+    });
+    if (emptyState) {
+      emptyState.textContent = query ? 'No projects match your search.' : 'No projects in this category yet';
+      emptyState.hidden = visibleCount > 0;
+    }
+  };
+
+  filterButtons.forEach((button) => {
     button.addEventListener('click', () => {
-      const filter = button.dataset.filter;
-      let visibleCount = 0;
-      document.querySelectorAll('.filter-button').forEach((item) => {
+      activeFilter = button.dataset.filter;
+      filterButtons.forEach((item) => {
         const active = item === button;
         item.classList.toggle('is-active', active);
         item.setAttribute('aria-pressed', String(active));
       });
-      projectCards.forEach((card) => {
-        const visible = filter === 'all' || card.dataset.category === filter;
-        card.hidden = !visible;
-        if (visible) visibleCount += 1;
-      });
-      if (emptyState) emptyState.hidden = visibleCount > 0;
+      applyProjectFilters();
     });
   });
+  projectSearch?.addEventListener('input', applyProjectFilters);
+  applyProjectFilters();
 
   let toastTimer;
   const showToast = (message) => {
